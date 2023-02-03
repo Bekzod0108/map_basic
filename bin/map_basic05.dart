@@ -6,10 +6,14 @@ Then return the map.
 
 */
 
-Map func() {
-  return;
+Map func(List name1, List name2) {
+  Map a={};
+  for(int b=0; b<name1.length; b++){
+    a[name1[b]]=name2[b];
+  }
+  return a;
 }
 
 void main() {
-  print(func());
+  print(func(['hello', 'big', 'sorry'],[1,2,3]));
 }
