@@ -6,14 +6,11 @@ Then return the map.
 
 */
 
-Map func(List name1, List name2) {
-  Map a={};
-  for(int b=0; b<name1.length; b++){
-    a[name1[b]]=name2[b];
-  }
+Map func(String name1, String name2) {
+  Map a={name1: name2};
   return a;
 }
 
 void main() {
-  print(func(['hello', 'big', 'sorry'],[1,2,3]));
+  print(func('Bekzod','Yuldoshev'));
 }
